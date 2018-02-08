@@ -1,0 +1,55 @@
+body{
+	background-image:url("../images/background.jpg");
+}
+.pizzaHeader{
+	background-image:url("../images/jumbotron.jpg");
+}
+.container {
+
+	min-height: 250px;
+	padding: 2px;
+	margin: 5px;
+}
+ul, li {
+	list-style: none;
+}
+
+/*@media screen and (min-width:768px)*/
+.jumbotron .h1, .jumbotron h1 {
+    font-size: 63px;
+    text-align: center;
+	
+}
+.h2, h2 {
+    font-size: 30px;
+    text-align: center;
+	color:white !important;
+
+}
+
+.jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    color: white !important;
+}
+.h3, h3 {
+    font-size: 24px;
+    color: white !important;
+}
+
+
+
+/*panel padding*/
+.panel-body {
+    padding: 15px;
+    height: 200px;
+}
+
+
+/*reciept information*/
+.receiptItems {
+	float: left;
+}
+.receiptPrice {
+	float: right;
+}

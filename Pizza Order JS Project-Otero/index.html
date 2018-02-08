@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Otero Pizza</title>
+	<!--custom css-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--bootsrap css-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--bootstrap js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--custom js-->
+	<script src="js/pizzaForm.js"></script>
+	</head>
+	<body>
+	<!--header section-->
+<div class="container">
+ <div class="jumbotron jumbotron-fluid pizzaHeader">
+  <h1>Otero Pizza</h1>      
+  <h2>Best pizza in town!!</h2>
+</div>
+
+<div class="container">
+  <h3>**First meat or veggie topping included, additional toppings $1.00</h3>      
+  <h3>**Stuffed Crust additional $3.00 </h3>      
+</div>    
+</div>
+<!--/header section-->
+<!--Order panels-->
+			<div class="container">
+				<div class="order-form">
+					<div class="form-title">
+						<h2>Build your Pizza</h2>
+					</div>
+					<div class="form">
+					  <div class="container">
+						<div class="row">
+						<!--size section-->
+						 <div class="panel-group col-md-3">
+							<div class="panel panel-success">
+							<div class="panel-heading">Pizza Size</div>
+							<div class="panel-body size">
+							<ul>
+									<li><input type="radio" name="size" value="personal"> Personal</li>
+									<li><input type="radio" name="size" value="Medium"> Medium</li>
+									<li><input type="radio" name="size" value="Large"> Large</li>
+									<li><input type="radio" name="size" value="Extra Large"> Extra Large</li>
+								</ul>
+							</div>
+							</div>
+							</div>
+							<!--/size section-->
+							<!--crust section-->
+							<div class="panel-group col-md-3">
+								<div class="panel panel-success">
+							<div class="panel-heading">Crust</div>
+							<div class="panel-body crust">
+								<ul>
+									<li><input type="radio" name="crust" value="Plain"> Plain Crust</li>
+									<li><input type="radio" name="crust" value="GarlicButter"> Garlic Butter Crust</li>
+									<li><input type="radio" name="crust" value="stuffedCrust"> Cheese Stuffed Crust</li>
+									<li><input type="radio" name="crust" value="Spicy"> Spicy Crust</li>
+									<li><input type="radio" name="crust" value="House"> House Special Crust</li>
+								</ul>
+							</div>
+							</div>
+							</div>
+							<!--/crust section-->
+							<!--sauce section-->
+							<div class="panel-group col-md-3">
+								<div class="panel panel-success">
+							<div class="panel-heading">Sauce</div>
+							<div class="panel-body sauce">
+							<ul>
+									<li><input type="radio" name="sauce" value="marinara"> Marinara Sauce</li>
+									<li><input type="radio" name="sauce" value="whiteSauce"> White Sauce</li>
+									<li><input type="radio" name="sauce" value="bbq"> Barbecue Sauce</li>
+									<li><input type="radio" name="sauce" value="none"> No Sauce</li>
+								</ul>
+							</div>
+							</div>
+							</div>
+							<!--/sauce section-->
+							<!--cheese section-->
+							<div class="panel-group col-md-3">
+								<div class="panel panel-success">
+							<div class="panel-heading">Cheese</div>
+							<div class="panel-body cheese">
+							<ul>
+									<li><input type="radio" name="cheese" value="regular"> Regular</li>
+									<li><input type="radio" name="cheese" value="xtraQueso"> Extra Cheese</li>
+									<li><input type="radio" name="cheese" value="noQueso"> No Cheese</li>
+								</ul>
+							</div>
+							</div>
+							</div>
+							<!--/sauce section-->
+							</div>
+							<!--end of row-->
+							<!-- New row with meats and veggies-->
+								<div class="row">
+						 <div class="panel-group col-md-6">
+						 <!--meat section-->
+							<div class="panel panel-success">
+							<div class="panel-heading">Meats</div>
+							<div class="panel-body meats">
+									<ul>
+									<li><input type="checkbox" name="meat" value="pepperoni"> Pepperoni</li>
+									<li><input type="checkbox" name="meat" value="sausage"> Sausage</li>
+									<li><input type="checkbox" name="meat" value="canadian"> Canadian Bacon</li>
+									<li><input type="checkbox" name="meat" value="groundBeef"> Ground Beef</li>
+									<li><input type="checkbox" name="meat" value="anchovies"> Anchovies</li>
+									<li><input type="checkbox" name="meat" value="chicken"> Chicken</li>
+								</ul>
+							</div>
+							</div>
+							</div>
+							<!--meat-->
+							<!--Veggie section-->
+							<div class="panel-group col-md-6">
+								<div class="panel panel-success">
+							<div class="panel-heading">Veggies</div>
+							<div class="panel-body veggies">
+								<ul>
+									<li><input type="checkbox" name="veggie" value="tomatoes"> Tomatoes</li>
+									<li><input type="checkbox" name="veggie" value="onion"> Onions</li>
+									<li><input type="checkbox" name="veggie" value="olives"> Olives</li>
+									<li><input type="checkbox" name="veggie" value="greenPeppers"> Green Peppers</li>
+									<li><input type="checkbox" name="veggie" value="mushroom"> Mushrooms</li>
+									<li><input type="checkbox" name="veggie" value="pineapple"> Pineapple</li>
+									<li><input type="checkbox" name="veggie" value="spinach"> Spinach</li>
+									<li><input type="checkbox" name="veggie" value="jalapeno"> Jalapeno</li>
+								</ul>
+							</div>
+								</div>
+							</div>
+							<!--/veggie-->
+							</div>				
+						</div>					
+					</div>
+				
+		
+<!-- Trigger the modal with a button -->
+  <button id="checkout" type="button" class="btn btn-info btn-lg"  onclick="pizzaOrder()" data-toggle="modal"  data-target="#myModal">Submit Order</button>
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+<!-- Modal reciept content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Order Summary</h4>
+        </div>
+        <div class="modal-body">
+          <section id="receipt">
+					<div class="pizzaReceiptSelections">
+						<div id="size"></div>
+						<div id="crust"></div>
+						<div id="sauce"></div>
+						<div id="cheese"></div>
+						<div id="meat"></div>
+						<div id="veggie"></div>
+					</div>
+					<div class="receipt">
+						<div id="sizePrice"></div>
+						<div id="crustPrice"></div>
+						<div id="saucePrice"></div>
+						<div id="cheesePrice"></div>
+						<div id="meatPrice"></div>
+						<div id="veggiePrice"></div>
+					</div>
+					<section>
+						<div id="pizzaTotal" class="receipt">
+						</div>
+					</section>
+				</section>
+      </div>
+	  <!--submit buttons --->
+		<div class="modal-footer">
+	    <input type="submit" class="btn btn-success" value="Submit Order"></input> 
+        <button type="button" class="btn btn-default" data-dismiss="modal">Back to Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
